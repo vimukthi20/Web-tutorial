@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1"> red color</button>
+    <button id="btn2"> green color</button>
+    <button id="btn3"> blue color</button>
+    <script>
+    function changeBackground(){
+        document.body.style.backgroundColor = buttonId;
+            
+        }
+        document.getElementById("btn1").addEventListener("mouseover",function(){
+            document.body.style.backgroundColor = "red";
+        });
+        document.getElementById("btn1").addEventListener("mouseout",function(){
+            document.body.style.backgroundColor = "white";
+        });
+
+        document.getElementById("btn2").addEventListener("mouseover",function(){
+            document.body.style.backgroundColor = "green";
+        });
+        document.getElementById("btn2").addEventListener("mouseout",function(){
+            document.body.style.backgroundColor = "white";
+        });
+
+        document.getElementById("btn3").addEventListener("mouseover",function(){
+            document.body.style.backgroundColor = "blue";
+        });
+        document.getElementById("btn3").addEventListener("mouseout",function(){
+            document.body.style.backgroundColor = "white";
+        });
+        
+    </script>
+</body>
+</html>

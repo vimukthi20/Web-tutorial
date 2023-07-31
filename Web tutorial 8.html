@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="answer"></h3>
+    <script>
+        let num1 = parseFloat(prompt("Enter first number: "));
+        let op = prompt("Enter the operator(+,-,*,/): ");
+        let num2 = parseFloat(prompt("Enter first number: "));
+
+        if(op ==="+")
+        {
+            let sum = num1 +num2;
+            document.getElementById("answer").innerHTML = "Summation is: "+sum;
+        }
+        else if(op === "-")
+        {
+            let sub = num1 - num2;
+            document.getElementById("answer").innerHTML = "subsraction is: "+sub;
+        }
+        else if(op === "*")
+        {
+            let mul = num1 * num2;
+            document.getElementById("answer").innerHTML = "Multiplication is: "+mul;
+        }
+        else if(op === "/")
+        {
+            let div = num1 / num2;
+            document.getElementById("answer").innerHTML = "Division is: "+ div;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="sum"></h3>
+    <h3 id="avg"></h3>
+    <script>
+        let sum=0;
+        let average = 0;
+        for(let i=0;i<6;i++)
+        {
+            let mark = parseInt(prompt("Enter your mark: "));
+            sum = sum + mark;
+        }
+        average = sum / 6;
+        document.getElementById("sum").innerHTML = "Sum is: "+sum;
+        document.getElementById("avg").innerHTML = "Average is: "+average;
+        if(average > 30)
+        {
+            alert("Congrajulation! You Passed");
+        }
+        else{
+            alert("Bad luck, try next time");
+        }
+        
+    </script>
+</body>
+</html>
